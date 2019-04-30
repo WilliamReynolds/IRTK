@@ -67,6 +67,15 @@ IF(CYGWIN)
   SET(_FLTK_PLATFORM_DEPENDENT_LIBRARIES ole32 uuid comctl32 wsock32 supc++ -lm -lgdi32)
 ENDIF(CYGWIN)
 
+
+#set (FLTK_BASE_LIBRARY "/usr/local/include/FL") #the full path to fltk library
+#set (FLTK_GL_LIBRARY ) #the full path to fltk_gl library
+#set (FLTK_FORMS_LIBRARY   ) #the full path to fltk_forms library
+#set (FLTK_IMAGES_LIBRARY   ) #the full path to fltk_images library
+#set (FLTK_INCLUDE_DIR "/home/pirc/Applications/fltk-1.3.4-2/build")
+set (FLTK_DIR "/usr/local/bin")
+set (FLTK_FLUID_EXECUTABLE "/usr/local/bin/fluid")
+
 # Initialize FLTK_DIR if not already known.
 IF(NOT FLTK_DIR)
   # Get the system search path for executable files as a CMake list.
@@ -99,6 +108,8 @@ IF(NOT FLTK_DIR)
       # Look in places relative to the system executable search path.
       ${_FLTK_CONFIG_SEARCH}
       # Look in standard UNIX install locations.
+      /usr/local/include/FL
+      /usr/local/bin
       /usr/local/lib/fltk
       /usr/lib/fltk
       /usr/local/include
@@ -138,6 +149,7 @@ IF(NOT FLTK_DIR)
       # Look in places relative to the system executable search path.
       ${_FLTK_DIR_SEARCH}
       # Look in standard UNIX install locations.
+      /usr/local/include/FL
       /usr
       /usr/local/lib/fltk
       /usr/lib/fltk
