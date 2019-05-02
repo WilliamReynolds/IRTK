@@ -73,7 +73,7 @@ ENDIF(CYGWIN)
 #set (FLTK_FORMS_LIBRARY   ) #the full path to fltk_forms library
 #set (FLTK_IMAGES_LIBRARY   ) #the full path to fltk_images library
 #set (FLTK_INCLUDE_DIR "/home/pirc/Applications/fltk-1.3.4-2/build")
-set (FLTK_DIR "/usr/local/bin")
+set (FLTK_DIR "/usr/local/share/fltk/FLTKConfig.cmake")
 set (FLTK_FLUID_EXECUTABLE "/usr/local/bin/fluid")
 
 # Initialize FLTK_DIR if not already known.
