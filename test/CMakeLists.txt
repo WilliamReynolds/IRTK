@@ -5,7 +5,7 @@ INCLUDE(CTest)
 LINK_LIBRARIES(rview++ registration++ transformation++ image++ geometry++ common++)
 
 #add google test
-SET (GTEST_SOURCEDIR /home/pirc/Applications/googletest)
+SET (GTEST_SOURCEDIR /home/irtkv10_install/googletest/)
 ADD_SUBDIRECTORY(${GTEST_SOURCEDIR} ${GTEST_SOURCEDIR}/build)
 INCLUDE_DIRECTORIES(${GTEST_SOURCEDIR}/include ${source_dir})
 
