@@ -30,7 +30,7 @@ SUBDIRS(common++/src geometry++/src image++/src contrib++/src applications packa
 
 INCLUDE(${IRTK_SOURCE_DIR}/config/IRTKInclude.cmake)
 
-OPTION(BUILD_TESTS "Build units tests" ON)
+OPTION(BUILD_TESTS "Build units tests" OFF)
 IF (BUILD_TESTS)
   MESSAGE("-- Unit tests enabled")
   ADD_SUBDIRECTORY (test)                 
